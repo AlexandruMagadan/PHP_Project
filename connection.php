@@ -3,7 +3,7 @@ class Connection {
 
     public function connect(): PDO {
         try {
-            $dsn='mysql:host=localhost;dbname=biblioteca;charset=utf8mb4';
+            $dsn='mysql:host=localhost;dbname=library;charset=utf8mb4';
             $pdo = new PDO( $dsn, 'root', '');
             $pdo->setAttribute(
                 PDO::ATTR_ERRMODE,
